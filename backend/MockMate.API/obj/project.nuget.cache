@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "zv8d+mQxo/8=",
+  "success": true,
+  "projectFilePath": "D:\\Workspace\\Projects\\MockMate\\backend\\MockMate.API\\MockMate.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\VISHAL\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.2\\microsoft.aspnetcore.openapi.10.0.2.nupkg.sha512",
+    "C:\\Users\\VISHAL\\.nuget\\packages\\microsoft.extensions.ai.abstractions\\10.4.1\\microsoft.extensions.ai.abstractions.10.4.1.nupkg.sha512",
+    "C:\\Users\\VISHAL\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\VISHAL\\.nuget\\packages\\ollamasharp\\5.4.25\\ollamasharp.5.4.25.nupkg.sha512"
+  ],
+  "logs": []
+}

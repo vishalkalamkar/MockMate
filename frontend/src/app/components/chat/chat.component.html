@@ -1,0 +1,33 @@
+<div class="chat-container">
+  <div class="chat-header">
+    <h1>🎯 MockMate</h1>
+    <p>AI Interview Coach by Vishal</p>
+  </div>
+
+  <div class="chat-messages">
+    <!-- New @for block replaces *ngFor -->
+    @for (msg of messages; track $index) {
+      <div [class]="'message ' + msg.role">
+        <span class="bubble">{{ msg.content }}</span>
+      </div>
+    } @empty {
+      <p class="text-center">Start your interview by saying hello!</p>
+    }
+
+    <!-- New @if block replaces *ngIf -->
+    @if (isLoading) {
+      <div class="message assistant">
+        <span class="bubble typing">MockMate is thinking...</span>
+      </div>
+    }
+  </div>
+
+  <div class="chat-input">
+    <input 
+      [(ngModel)]="userInput" 
+      (keyup.enter)="sendMessage()" 
+      placeholder="Type your answer..." 
+      [disabled]="isLoading" />
+    <button (click)="sendMessage()" [disabled]="isLoading">Send</button>
+  </div>
+</div>
